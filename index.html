@@ -1,0 +1,29 @@
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+  .head {
+    height: 40px;
+    background-color: #1E639C;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bolder;
+    padding-left: 15px;
+  }
+</style>
+<div class="head"> Cube Documents</div>
+<iframe id="doc" frameborder="0" width="100%" height="100%" src="./_book/index.html"></iframe>
+
+<script type="text/javascript">
+  (function () {
+    var iframe = document.querySelector('#doc');
+    function resize() {
+      var winHeight = window.innerHeight;
+      iframe.style.height = (winHeight - 40) + 'px';
+    }
+    window.addEventListener('resize', resize, 'false');
+    resize();
+  })();
+</script>

@@ -1,2 +1,2 @@
-# node-cube.github.io
-node-cube，编写前端逻辑新方式。
+# CUBE 模块化编写你的代码
+
