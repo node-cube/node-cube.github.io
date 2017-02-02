@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Processors · Cube</title>
+        <title>cube_config.js · Cube</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.2">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="build-in_processors" />
+    <link rel="next" href="html_page" />
     
     
-    <link rel="prev" href="../arch.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -115,9 +115,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="../configuration/">
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <a href="../configuration/">
+                <a href="./">
             
                     
                     Configuration
@@ -129,9 +129,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../configuration/assets.html">
+        <li class="chapter active" data-level="1.3.1" data-path="assets.html">
             
-                <a href="../configuration/assets.html">
+                <a href="assets.html">
             
                     
                     cube_config.js
@@ -142,7 +142,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../configuration/html_page">
+        <li class="chapter " data-level="1.3.2" data-path="html_page">
             
                 <span>
             
@@ -192,9 +192,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.5" data-path="./">
+        <li class="chapter " data-level="1.5" data-path="../processors/">
             
-                <a href="./">
+                <a href="../processors/">
             
                     
                     Processors
@@ -206,7 +206,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="build-in_processors">
+        <li class="chapter " data-level="1.5.1" data-path="../processors/build-in_processors">
             
                 <span>
             
@@ -219,7 +219,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="react">
+        <li class="chapter " data-level="1.5.2" data-path="../processors/react">
             
                 <span>
             
@@ -232,7 +232,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="ejs">
+        <li class="chapter " data-level="1.5.3" data-path="../processors/ejs">
             
                 <span>
             
@@ -245,7 +245,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="less">
+        <li class="chapter " data-level="1.5.4" data-path="../processors/less">
             
                 <span>
             
@@ -258,7 +258,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="styluss">
+        <li class="chapter " data-level="1.5.5" data-path="../processors/styluss">
             
                 <span>
             
@@ -271,9 +271,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="custom_your_own_processor.html">
+        <li class="chapter " data-level="1.5.6" data-path="../processors/custom_your_own_processor.html">
             
-                <a href="custom_your_own_processor.html">
+                <a href="../processors/custom_your_own_processor.html">
             
                     
                     custom your own processor
@@ -403,7 +403,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >Processors</a>
+        <a href=".." >cube_config.js</a>
     </h1>
 </div>
 
@@ -418,7 +418,46 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="processors">Processors</h1>
+                                <h1 id="cubeconfigjs">cube_config.js</h1>
+<p>&#x9759;&#x6001;&#x8D44;&#x6E90;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;cube.json&#xFF0C;&#x7528;&#x6765;&#x638C;&#x7BA1;cube&#x7684;&#x914D;&#x7F6E;.</p>
+<p>&#x7C7B;&#x4F3C;&#x8FD9;&#x4E48;&#x4E2A;&#x914D;&#x7F6E;&#xFF1A;</p>
+<pre><code class="lang-json">{
+    <span class="hljs-comment">/**
+     * default true, always cache file
+     */</span>
+    <span class="hljs-string">&quot;cache&quot;</span>: <span class="hljs-literal">true</span>
+    <span class="hljs-comment">/**
+     * resource base path, usually is the http prefix path
+     */</span>
+    <span class="hljs-string">&quot;resBase&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,
+    <span class="hljs-comment">/**
+     * process list
+     */</span>
+    <span class="hljs-string">&quot;processors&quot;</span>: {
+        <span class="hljs-string">&quot;.js&quot;</span>: [],
+        <span class="hljs-string">&quot;.jsx&quot;</span>: [],
+        <span class="hljs-string">&quot;.less&quot;</span>: []
+    },
+    <span class="hljs-comment">/**
+     * module optmize, when module already have mini-file,  alias to the mini-file. this map can speed up page-loading in dev mode
+     */</span>
+    <span class="hljs-string">&quot;moduleMap&quot;</span>: {
+            <span class="hljs-string">&quot;react&quot;</span>: <span class="hljs-string">&quot;./dist/react.mini.js&quot;</span>
+    },
+    <span class="hljs-string">&quot;build&quot;</span>: {
+        <span class="hljs-comment">/**
+         * ignore file
+         */</span>
+        ignore: [],
+        <span class="hljs-comment">/**
+        * file no need to tranfer, just copy them to the dest-dir
+        */</span>
+        skip: [],
+        mangleFileName:
+
+    }
+}
+</code></pre>
 
                                 
                                 </section>
@@ -446,12 +485,12 @@
 
             
                 
-                <a href="../arch.html" class="navigation navigation-prev " aria-label="Previous page: arch">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: Configuration">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="build-in_processors" class="navigation navigation-next " aria-label="Next page: build-in processors">
+                <a href="html_page" class="navigation navigation-next " aria-label="Next page: html_page">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -462,7 +501,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Processors","level":"1.5","depth":1,"next":{"title":"build-in processors","level":"1.5.1","depth":2,"path":"processors/build-in_processors","ref":"processors/build-in_processors","articles":[]},"previous":{"title":"arch","level":"1.4.1","depth":2,"path":"arch.md","ref":"arch.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Cube","gitbook":"*"},"file":{"path":"processors/README.md","mtime":"2016-06-20T02:31:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-02T13:59:17.122Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"cube_config.js","level":"1.3.1","depth":2,"next":{"title":"html_page","level":"1.3.2","depth":2,"path":"configuration/html_page","ref":"configuration/html_page","articles":[]},"previous":{"title":"Configuration","level":"1.3","depth":1,"path":"configuration/README.md","ref":"configuration/README.md","articles":[{"title":"cube_config.js","level":"1.3.1","depth":2,"path":"configuration/assets.md","ref":"configuration/assets.md","articles":[]},{"title":"html_page","level":"1.3.2","depth":2,"path":"configuration/html_page","ref":"configuration/html_page","articles":[]}]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Cube","gitbook":"*"},"file":{"path":"configuration/assets.md","mtime":"2016-11-28T03:19:31.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-02T13:59:17.122Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

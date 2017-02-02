@@ -3,9 +3,8 @@ install:
 
 release:
 	@rm -rf ./book
-	@gitbook build
-	@git add -A
-	@git st
+	@gitbook build .
+	@mv ./_book ./book
 
 
 PHONY: release install

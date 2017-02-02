@@ -1,344 +1,456 @@
+
 <!DOCTYPE HTML>
-<html lang="en" >
-    
+<html lang="" >
     <head>
-        
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>client side api | CUBE 模块化编写你的代码</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>client side api · Cube</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
-        <meta name="generator" content="GitBook 2.6.6">
+        <meta name="generator" content="GitBook 3.2.2">
         
         
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
         
+    
     <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+    
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+    
         
     
         
-        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
-        
     
+        
     
 
         
     
     
-    <link rel="next" href="../api_reference/module_api.html" />
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="module_api.html" />
     
     
-    <link rel="prev" href="../api_reference/server_side_api.html" />
+    <link rel="prev" href="server_side_api.html" />
     
 
-        
     </head>
     <body>
         
+<div class="book">
+    <div class="book-summary">
         
-    <div class="book"
-        data-level="5.2"
-        data-chapter-title="client side api"
-        data-filepath="api_reference/client_side_api.md"
-        data-basepath=".."
-        data-revision="Wed Mar 30 2016 20:20:42 GMT+0800 (CST)"
-        data-innerlanguage="">
-    
-
-<div class="book-summary">
-    <nav role="navigation">
-        <ul class="summary">
             
-            
-            
-            
-
-            
-
-            
-    
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                        Introduction
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1" data-path="env.html">
-            
-                
-                    <a href="../env.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                        Getting Start
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2" data-path="features/index.html">
-            
-                
-                    <a href="../features/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                        Features
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="3" data-path="powerful_processors.html">
-            
-                
-                    <a href="../powerful_processors.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>3.</b>
-                        
-                        Advanced Usage
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4" data-path="processors/index.html">
-            
-                
-                    <a href="../processors/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.</b>
-                        
-                        Processors
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="4.1" data-path="processors/build-in_processors.html">
-            
-            <span><b>4.1.</b> build-in processors</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.2" data-path="processors/react.html">
-            
-            <span><b>4.2.</b> react</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.3" data-path="processors/ejs.html">
-            
-            <span><b>4.3.</b> ejs</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.4" data-path="processors/less.html">
-            
-            <span><b>4.4.</b> less</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.5" data-path="processors/styluss.html">
-            
-            <span><b>4.5.</b> styluss</span>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="4.6" data-path="processors/custom_your_own_processor.html">
-            
-                
-                    <a href="../processors/custom_your_own_processor.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>4.6.</b>
-                        
-                        custom your own processor
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        <li class="chapter " data-level="5" data-path="api_reference/index.html">
-            
-                
-                    <a href="../api_reference/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.</b>
-                        
-                        API Reference
-                    </a>
-            
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="5.1" data-path="api_reference/server_side_api.html">
-            
-                
-                    <a href="../api_reference/server_side_api.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.1.</b>
-                        
-                        server side api
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="5.2" data-path="api_reference/client_side_api.html">
-            
-                
-                    <a href="../api_reference/client_side_api.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.2.</b>
-                        
-                        client side api
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5.3" data-path="api_reference/module_api.html">
-            
-                
-                    <a href="../api_reference/module_api.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.3.</b>
-                        
-                        module api
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="5.4" data-path="api_reference/cli_api.html">
-            
-                
-                    <a href="../api_reference/cli_api.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>5.4.</b>
-                        
-                        cli api
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-
-            
-            <li class="divider"></li>
-            <li>
-                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-                    Published with GitBook
-                </a>
-            </li>
-            
-        </ul>
-    </nav>
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
 </div>
 
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../env.html">
+            
+                <a href="../env.html">
+            
+                    
+                    Getting Start
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../configuration/">
+            
+                <a href="../configuration/">
+            
+                    
+                    Configuration
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../configuration/assets.html">
+            
+                <a href="../configuration/assets.html">
+            
+                    
+                    cube_config.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../configuration/html_page">
+            
+                <span>
+            
+                    
+                    html_page
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../powerful_processors.html">
+            
+                <a href="../powerful_processors.html">
+            
+                    
+                    Advanced Usage
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../arch.html">
+            
+                <a href="../arch.html">
+            
+                    
+                    arch
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../processors/">
+            
+                <a href="../processors/">
+            
+                    
+                    Processors
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../processors/build-in_processors">
+            
+                <span>
+            
+                    
+                    build-in processors
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../processors/react">
+            
+                <span>
+            
+                    
+                    react
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../processors/ejs">
+            
+                <span>
+            
+                    
+                    ejs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="../processors/less">
+            
+                <span>
+            
+                    
+                    less
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="../processors/styluss">
+            
+                <span>
+            
+                    
+                    styluss
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="../processors/custom_your_own_processor.html">
+            
+                <a href="../processors/custom_your_own_processor.html">
+            
+                    
+                    custom your own processor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    API Reference
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="server_side_api.html">
+            
+                <a href="server_side_api.html">
+            
+                    
+                    server side api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6.2" data-path="client_side_api.html">
+            
+                <a href="client_side_api.html">
+            
+                    
+                    client side api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="module_api.html">
+            
+                <a href="module_api.html">
+            
+                    
+                    module api
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="cli_api.html">
+            
+                <a href="cli_api.html">
+            
+                    
+                    cli api
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../appendix.html">
+            
+                <a href="../appendix.html">
+            
+                    
+                    Appendix
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
     <div class="book-body">
-        <div class="body-inner">
-            <div class="book-header" role="navigation">
-    <!-- Actions Left -->
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
     
 
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >CUBE 模块化编写你的代码</a>
+        <a href=".." >client side api</a>
     </h1>
 </div>
 
-            <div class="page-wrapper" tabindex="-1" role="main">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-">
-                    
-                        <h1 id="client-side-api">client side api</h1>
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="client-side-api">client side api</h1>
 <h2 id="first-include-cube-loader">First: include cube loader</h2>
 <p>there are two way to init cube in browser</p>
-<p>1.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>
-    <span class="hljs-attribute">data-base</span>=<span class="hljs-value">&quot;/assets&quot;</span>
-    <span class="hljs-attribute">data-main</span>=<span class="hljs-value">&quot;/main.js&quot;</span>
-    <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://raw.githubusercontent.com/node-cube/cube/master/runtime/cube.min.js&quot;</span>
-    <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span>/&gt;</span><span class="handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span>&gt;</span><span class="undefined">
+<ol>
+<li><p>from html tag</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>
+   <span class="hljs-attr">data-base</span>=<span class="hljs-string">&quot;/assets&quot;</span>
+   <span class="hljs-attr">data-main</span>=<span class="hljs-string">&quot;/main.js&quot;</span>
+   <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/${resbase}/cube_loader.js&quot;</span>
+   <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>/&gt;</span><span class="handlebars"><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="undefined">
 </span></span></span></code></pre>
+<blockquote>
 <p>in this example, cube inited with configs wirtting in the <code>script</code>&apos;s attribute (in html5, we can access this attrbute which start with <code>data-</code> by api <code>node.dataset</code>)
 the hole config properties see belew.</p>
-<p>2.</p>
-<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">&quot;https://raw.githubusercontent.com/node-cube/cube/master/runtime/cube.min.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
-<span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">&quot;text/javascript&quot;</span>&gt;</span><span class="actionscript">
+</blockquote>
+</li>
+<li><p>using client-side api</p>
+<pre><code class="lang-html"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/${resbase}/cube_loader.js&quot;</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text/javascript&quot;</span>&gt;</span><span class="actionscript">
 (<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">()</span> </span>{
-    Cube.init({
-        base: <span class="hljs-string">&apos;/assets&apos;</span>
-    });
-    Cube.<span class="hljs-keyword">use</span>(<span class="hljs-string">&apos;/main.js&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Main)</span> </span>{
-        Main.run({
-            <span class="hljs-comment">// TODO global config here</span>
-        });
-    })
+   Cube.init({
+       base: <span class="hljs-string">&apos;/assets&apos;</span>
+   });
+   Cube.use(<span class="hljs-string">&apos;/main.js&apos;</span>, <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-params">(Main)</span> </span>{
+       Main.run({
+           <span class="hljs-comment">// TODO global config here</span>
+       });
+   })
 })();
-</span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span>
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
 </code></pre>
+</li>
+</ol>
 <h2 id="api">API</h2>
 <h3 id="cube-init-options">cube init options</h3>
 <p>options object properties:</p>
@@ -380,50 +492,82 @@ like: <code>/assets</code></p>
 <li>Cube.use([script1, script2, script3...], function (mod1, mod2, mod3){});</li>
 </ul>
 
-                    
-                    </section>
-                
-                
-                </div>
-            </div>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
         </div>
-
-        
-        <a href="../api_reference/server_side_api.html" class="navigation navigation-prev " aria-label="Previous page: server side api"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../api_reference/module_api.html" class="navigation navigation-next " aria-label="Next page: module api"><i class="fa fa-angle-right"></i></a>
-        
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
     </div>
 </div>
 
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="server_side_api.html" class="navigation navigation-prev " aria-label="Previous page: server side api">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="module_api.html" class="navigation navigation-next " aria-label="Next page: module api">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
         
-<script src="../gitbook/app.js"></script>
+    </div>
 
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
-    
-
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
-    gitbook.start(config);
-});
-</script>
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"client side api","level":"1.6.2","depth":2,"next":{"title":"module api","level":"1.6.3","depth":2,"path":"api_reference/module_api.md","ref":"api_reference/module_api.md","articles":[]},"previous":{"title":"server side api","level":"1.6.1","depth":2,"path":"api_reference/server_side_api.md","ref":"api_reference/server_side_api.md","articles":[]},"dir":"ltr"},"config":{"plugins":[],"root":"./src","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Cube","gitbook":"*"},"file":{"path":"api_reference/client_side_api.md","mtime":"2016-11-25T02:37:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-02-02T13:59:17.122Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
 
         
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
     </body>
-    
 </html>
+
