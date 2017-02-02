@@ -1,6 +1,7 @@
 # module api
 
-in module scope, cube supply several apis
+在编写前端模块中，cube提供了如下API。
+在模块中可以直接调用
 
 ## require(module)
 
